@@ -29,22 +29,22 @@ export default function Footer(props) {
                 <div className={classes.left}>
                     <List className={classes.list}>
                         <ListItem className={classes.inlineBlock}>
-                            <a href="#" className={classes.block} target="_blank" >
+                            <a href="https://hi.zp.ua/" className={classes.block}  >
                                 миньет создателю сайта
                             </a>
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
-                            <a href="#" className={classes.block} target="_blank" >
+                            <a href="https://hi.zp.ua/" className={classes.block}  >
                                 About us
                             </a>
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
-                            <a href="#" className={classes.block} target="_blank" >
+                            <a href="https://hi.zp.ua/" className={classes.block}  >
                                 Blog
                             </a>
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
-                            <a href="#" className={classes.block} target="_blank" >
+                            <a href="https://hi.zp.ua/" className={classes.block}  >
                                 Licenses
                             </a>
                         </ListItem>
@@ -53,7 +53,7 @@ export default function Footer(props) {
                 <div className={classes.right}>
                     &copy; {1900 + new Date().getYear()} , made with{" "}
                     <Favorite className={classes.icon} /> by{" "}
-                    <a href="#" className={aClasses} target="_blank" >
+                    <a href="https://hi.zp.ua/" className={aClasses}  >
                         Hackers - Inside Tim
                     </a>{" "}
                     for a better web.

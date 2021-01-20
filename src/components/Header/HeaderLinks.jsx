@@ -13,7 +13,7 @@ import Button from "../../utils/CustomButton/Button";
 import styles from "./haederLinksStyle";
 const useStyles = makeStyles(styles);
 
-export default function HeaderLinks(props) {
+export default function HeaderLinks() {
     const classes = useStyles();
 
     return (
@@ -31,8 +31,7 @@ export default function HeaderLinks(props) {
                                     <Link to="/services" className={classes.dropdownLink}>
                                         Услуги
                                     </Link>,
-                                    <a href="#"
-                                       target="_blank"
+                                    <a href="https://hi.zp.ua/"
                                        className={classes.dropdownLink}>Documentation</a>
                                 ]}/>
             </ListItem>

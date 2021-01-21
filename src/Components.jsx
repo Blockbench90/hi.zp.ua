@@ -1,20 +1,22 @@
 import React from "react";
 import classNames from "classnames";
-import { makeStyles } from "@material-ui/core/styles";
+import {makeStyles} from "@material-ui/core/styles";
 
 import Header from "./components/Header/Header";
 import Parallax from "./components/Parallax/Parallax";
 import Footer from "./components/Footer/Footer";
 
 import HeaderLinks from "./components/Header/HeaderLinks";
-import TabsSection from "./components/TabsSection/TabsSection";
+import ServicesSection from "./components/Services/ServicesSection";
 import IndexHeader from "./components/Parallax/ContentParallax";
 import CarouselSection from "./components/Carousel/CarouselSection";
-import LoginSection from "./components/LoginSection/LoginSection";
-import ExamplesSection from "./components/ExamplesSection/ExampleSection";
-import DownloadSection from "./components/DownloadSection/DownloadSection";
+import BannerSection from "./components/BannerSection/BannerSection";
+import ProfilePreviewSection from "./components/ProfilePreview/ProfilePreviewSection";
+import QuestionSection from "./components/Question/QuestionSection";
 
 import styles from "./assets/jss/components";
+import ScrollButton from "./utils/ScrollButton/ScrollButton";
+
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -31,11 +33,13 @@ export default function Components(props) {
             </Parallax>
 
             <div className={classNames(classes.main, classes.mainRaised)}>
-                <TabsSection />
-                <CarouselSection />
-                <LoginSection />
-                <ExamplesSection />
-                <DownloadSection />
+                <ScrollButton>
+                    <ServicesSection />
+                    <CarouselSection />
+                    <BannerSection />
+                    <ProfilePreviewSection />
+                    <QuestionSection />
+                </ScrollButton>
             </div>
             <Footer />
         </div>

@@ -21,6 +21,11 @@
       display: block !important;
     }
   }
+  @media (max-width: 565px) {
+    .slick-dots {
+      opacity: 0;
+    }
+  }
 
   .slick-caption {
     padding-bottom: 45px;

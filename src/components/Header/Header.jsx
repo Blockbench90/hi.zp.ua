@@ -1,4 +1,5 @@
 import React from "react";
+import * as Scroll from 'react-scroll';
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import {makeStyles} from "@material-ui/core/styles";
@@ -11,10 +12,17 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 
 import styles from "./headerStyle";
+
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
     const classes = useStyles();
+
+    const scroll = Scroll.animateScroll
+    const scrollToTop = () => {
+        scroll.scrollToTop()
+    }
+
 
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -62,7 +70,7 @@ export default function Header(props) {
         [classes.fixed]: fixed,
     });
 
-    const brandComponent =<Button className={classes.title}>{brand}</Button>;
+    const brandComponent =<Button onClick={scrollToTop} className={classes.title}>{brand}</Button>;
 
     return (
         <AppBar className={appBarClasses}>

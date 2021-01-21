@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 
-import { makeStyles } from "@material-ui/core/styles";
+import {makeStyles} from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Icon from "@material-ui/core/Icon";
@@ -13,6 +13,8 @@ import CardHeader from "../Card/CardHeader";
 import Button from "../CustomButton/Button";
 
 import styles from "./CustomTabsStyle";
+import {Link} from "react-router-dom";
+
 const useStyles = makeStyles(styles);
 
 export default function CustomTabs(props) {
@@ -30,9 +32,10 @@ export default function CustomTabs(props) {
     });
     return (
         <Card plain={plainTabs}>
-            <CardHeader color={headerColor} plain={plainTabs}>
+            <CardHeader color={headerColor} plain={plainTabs} >
                 {title !== undefined ? <div className={cardTitle}>{title}</div> : null}
-                <Tabs value={value} onChange={handleChange} classes={{ root: classes.tabsRoot, indicator: classes.displayNone }}>
+                <Tabs value={value} onChange={handleChange} classes={{ root: classes.tabsRoot, indicator: classes.displayNone,
+                    flexContainer: classes.justContent }}>
 
                     {tabs.map((prop, key) => {
                         let icon = {};
@@ -64,14 +67,18 @@ export default function CustomTabs(props) {
             <CardBody>
                 {tabs.map((prop, key) => {
                     if (key === value) {
-                        return <div key={key}>{prop.tabContent}<div style={{display: 'grid', 'justify-content': 'end'}}><Button
+                        return <div key={key}>{prop.tabContent}<div style={{display: 'grid', 'justify-content': 'end'}}>
+                            <Link to={prop.tabPath}>
+                            <Button
                             color="primary"
                             size="lg"
-                            href="#"
                             target="_blank"
                         >
                             Читать дальше...
-                        </Button></div></div>;
+                                </Button>
+                            </Link>
+                            </div>
+                        </div>;
                     }
                     return null;
                 })}
@@ -94,6 +101,7 @@ CustomTabs.propTypes = {
         PropTypes.shape({
             tabName: PropTypes.string.isRequired,
             tabIcon: PropTypes.object,
+            tabPath: PropTypes.string,
             tabContent: PropTypes.node.isRequired
         })
     ),

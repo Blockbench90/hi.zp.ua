@@ -14,6 +14,9 @@ const customTabsStyle = {
     tabsRoot: {
         minHeight: "unset !important"
     },
+    justContent: {
+        justifyContent: 'center'
+    },
     tabRootButton: {
         minHeight: "unset !important",
         minWidth: "unset !important",
@@ -36,6 +39,9 @@ const customTabsStyle = {
     tabSelected: {
         backgroundColor: "rgba(255, 255, 255, 0.2)",
         transition: "0.2s background-color 0.1s"
+    },
+    flexContainer: {
+        justifyContent: 'center'
     },
     tabWrapper: {
         display: "inline-block",

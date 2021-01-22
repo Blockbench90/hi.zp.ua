@@ -15,6 +15,7 @@ import profile from "../../assets/img/services/Fix2.png";
 import styles from "./servicesStyle";
 import ScrollButton from "../../utils/ScrollButton/ScrollButton";
 import QuestionSection from "../../components/Question/QuestionSection";
+import BackButton from "../../utils/ScrollButton/BackButton";
 
 const useStyles = makeStyles(styles);
 
@@ -33,7 +34,9 @@ export default function FixPage(props) {
             <Parallax small filter image={require("../../assets/img/slick_2.jpg")}/>
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <ScrollButton>
+
                     <div>
+                        <BackButton/>
                         <div className={classes.container}>
                             <GridContainer justify="center">
                                 <GridItem xs={12} sm={12} md={9}>

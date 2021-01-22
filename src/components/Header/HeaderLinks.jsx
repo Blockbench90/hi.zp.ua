@@ -25,14 +25,14 @@ export default function HeaderLinks() {
                 }}
                                 buttonIcon={Apps}
                                 dropdownList={[
-                                    <Link to="/services" className={classes.dropdownLink}>
-                                        Услуги
+                                    <Link to="/fix" className={classes.dropdownLink}>
+                                        Ремонт
                                     </Link>,
                                     <Link to="/services" className={classes.dropdownLink}>
                                         Услуги
                                     </Link>,
                                     <a href="https://hi.zp.ua/"
-                                       className={classes.dropdownLink}>Documentation</a>
+                                       className={classes.dropdownLink}>hi.zp.ua</a>
                                 ]}/>
             </ListItem>
 

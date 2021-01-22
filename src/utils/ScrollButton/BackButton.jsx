@@ -1,10 +1,10 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
-import useScrollTrigger from '@material-ui/core/useScrollTrigger'
 import Fab from '@material-ui/core/Fab'
-import Toolbar from '@material-ui/core/Toolbar'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import Zoom from '@material-ui/core/Zoom'
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import {Link} from "react-router-dom";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import Zoom from "@material-ui/core/Zoom";
 import Tooltip from "@material-ui/core/Tooltip";
 
 //Кнопка скролинга
@@ -12,8 +12,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 const useScrollButtonStyles = makeStyles((theme) => ({
     root: {
         position: 'fixed',
-        bottom: theme.spacing(2),
-        right: theme.spacing(3.8),
+        bottom: theme.spacing(2)
     },
     //отключает стандартный размер в комбинации с variant={'dense'}
     toolbar: {
@@ -45,45 +44,39 @@ const useScrollButtonStyles = makeStyles((theme) => ({
     }
 }))
 
-function ScrollTop(props) {
+function Scroll(props) {
     const {children, window} = props
     const classes = useScrollButtonStyles()
+
     const trigger = useScrollTrigger({
         target: window ? window() : undefined,
         disableHysteresis: true,
         threshold: 100,
     });
 
-    const handleClick = (event) => {
-        const anchor = ((event.target ).ownerDocument || document).querySelector('#back-to-top-anchor')
-
-        if (anchor) {
-            anchor.scrollIntoView({behavior: 'smooth', block: 'center'})
-        }
-    };
-
     return (
-        <Zoom in={trigger}>
-            <div onClick={handleClick} role="presentation" className={classes.root}>
+        <Link to={'/'}>
+            <Zoom in={trigger}>
+            <div role="presentation" className={classes.root}>
                 {children}
             </div>
-        </Zoom>
+            </Zoom>
+        </Link>
     );
 }
 
-export default function ScrollButton(props) {
+export default function BackButton(props) {
     const classes = useScrollButtonStyles()
     return (
         <React.Fragment>
-            <Toolbar id="back-to-top-anchor" variant='dense' className={classes.toolbar}/>
             {props.children}
-            <ScrollTop {...props}>
-                <Tooltip id="back-to-home" title="Вверх" placement="left" classes={{ tooltip: classes.tooltip }}>
-                <Fab color="secondary" size="large" variant="extended" aria-label="scroll back to top">
-                    <ArrowUpwardIcon/>
+            <Scroll {...props}>
+                <Tooltip id="back-to-home" title="Вернуться" placement="right" classes={{ tooltip: classes.tooltip }}>
+                <Fab color="primary" size="large" variant="extended" aria-label="back to current page">
+                    <KeyboardBackspaceIcon/>
                 </Fab>
                 </Tooltip>
-            </ScrollTop>
+            </Scroll>
         </React.Fragment>
     );
 }

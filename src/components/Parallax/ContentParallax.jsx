@@ -29,7 +29,7 @@ function IndexHeader() {
                             <div><img src={require("../../assets/img/hi-logo.png")} alt="logo" /></div>
                             <div>
                                 <h2 className="presentation-subtitle text-center">
-                                    Hacker-Inside - Тут не наебут!
+                                    Hackers - Inside
                                 </h2>
                             </div>
                         </div>

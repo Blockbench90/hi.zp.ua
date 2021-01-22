@@ -12,6 +12,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 
 import styles from "./headerStyle";
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles(styles);
 
@@ -70,7 +71,7 @@ export default function Header(props) {
         [classes.fixed]: fixed,
     });
 
-    const brandComponent =<Button onClick={scrollToTop} className={classes.title}>{brand}</Button>;
+    const brandComponent =<Button onClick={scrollToTop} className={classes.title}><Link style={{color: "inherit"}} to={'/'}>{brand}</Link></Button>;
 
     return (
         <AppBar className={appBarClasses}>

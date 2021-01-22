@@ -47,6 +47,7 @@
 }
 
 .title-brand {
+    top: -60px;
     max-width: 730px;
     margin: 0 auto;
     position: relative;
@@ -119,7 +120,7 @@
     margin-left: -35%;
     margin-bottom: -50px;
     width: 110%;
-    opacity: .5;
+    opacity: .4;
 }
 
 .fog-low img {
@@ -128,7 +129,7 @@
 
 .fog-low.right {
     margin-left: 30%;
-    opacity: .5;
+    opacity: .4;
 }
 
 .moving-clouds {
@@ -137,9 +138,9 @@
     bottom: 0;
     left: 0;
     width: 250.625em;
-    height: 43.75em;
+    height: 63.75em;
     -webkit-animation: cloudLoop 80s linear infinite;
-    animation: cloudLoop 80s linear infinite;
+    animation: cloudLoop 40s linear infinite;
 }
 
 @keyframes cloudLoop {

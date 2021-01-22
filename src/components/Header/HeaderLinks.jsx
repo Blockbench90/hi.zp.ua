@@ -28,8 +28,8 @@ export default function HeaderLinks() {
                                     <Link to="/fix" className={classes.dropdownLink}>
                                         Ремонт
                                     </Link>,
-                                    <Link to="/services" className={classes.dropdownLink}>
-                                        Услуги
+                                    <Link to="/service" className={classes.dropdownLink}>
+                                        Обслуживание
                                     </Link>,
                                     <a href="https://hi.zp.ua/"
                                        className={classes.dropdownLink}>hi.zp.ua</a>

@@ -10,6 +10,7 @@ import MaxProfile from "./pages/ProfilePages/MaxPage";
 import YuraProfile from "./pages/ProfilePages/YuraPage";
 import Components from "./Components";
 import FixPage from "./pages/ServicesPages/FixPage";
+import ServicePage from "./pages/ServicesPages/ServicePage";
 
 //TODO: название вверх
 //TODO: кнопка возврата на главную
@@ -22,6 +23,7 @@ ReactDOM.render(
     <Switch>
         {/*Services*/}
         <Route path="/fix" component={FixPage} />
+        <Route path="/service" component={ServicePage} />
         {/*ProfilePages*/}
       <Route path="/max-profile" component={MaxProfile} />
       <Route path="/yura-profile" component={YuraProfile} />

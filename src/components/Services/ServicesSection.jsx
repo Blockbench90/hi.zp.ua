@@ -2,7 +2,7 @@ import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
-import {BusinessCenter} from '@material-ui/icons';
+import {BusinessCenter, Error} from '@material-ui/icons';
 
 
 import GridContainer from "../../utils/Grid/GridContainer";
@@ -47,20 +47,25 @@ export default function ServicesSection() {
                                         )
                                     },
                                     {
-                                        tabName: "Messages",
-                                        path: '/profile',
-                                        tabIcon: Chat,
+                                        tabName: "Обслуживание",
+                                        tabPath: '/service',
+                                        tabIcon: Error,
                                         tabContent: (
-                                            <p className={classes.textCenter}>
-                                                I think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at. I will be the leader of a company
-                                                that ends up being worth billions of dollars, because I
-                                                got the answers. I understand culture. I am the nucleus.
-                                                I think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at.
-                                            </p>
+                                            <div className={classes.textCenter}>
+                                                <h6 >
+                                                    Ошибочно считать, что переустановка операционной системы, решает все проблемы!
+                                                </h6>
+                                                <p>
+                                                    Каждый компьютер, ноутбук или тот же принтер, нуждается в обслуживании точно так же,
+                                                    как и машина. Да, компьютер потребляет электричество, а не бензин, но масло все же менять
+                                                    обязательно. Случалось ли такое, что компьютер после небольшой нагрузки выключался.
+                                                    Ни с того, ни с сего, без спросу и разрешения, просто бац и потух? Или он начинает замедляться,
+                                                    замедляться, замедляться, и вот он уже включается 5 минут, вкладки в браузере загружаются по пол
+                                                    часа, вы грешите на плохой интернет, перезагружаете роутер, а эффекта ноль? Или шум вентиляторов
+                                                    начинает давить на уши, словно вы стоите возле мощной, гудящей вытяжки? Все возможно, и даже больше,
+                                                    до боли нам знакомо.
+                                                </p>
+                                            </div>
                                         )
                                     }
                                 ]}

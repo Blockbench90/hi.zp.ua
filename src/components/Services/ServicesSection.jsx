@@ -1,9 +1,6 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
-import Chat from "@material-ui/icons/Chat";
-import Build from "@material-ui/icons/Build";
-import {BusinessCenter, Error} from '@material-ui/icons';
-
+import {CheckCircleOutline, Chat, DoneAll, ImportantDevices, Build, BusinessCenter, Error, Computer} from '@material-ui/icons';
 
 import GridContainer from "../../utils/Grid/GridContainer";
 import GridItem from "../../utils/Grid/GridItem";
@@ -76,36 +73,28 @@ export default function ServicesSection() {
                                 headerColor="primary"
                                 tabs={[
                                     {
-                                        tabName: "Messages",
-                                        path: '/profile',
-                                        tabIcon: Chat,
+                                        tabName: "Программы",
+                                        tabPath: '/support',
+                                        tabIcon: ImportantDevices,
                                         tabContent: (
                                             <p className={classes.textCenter}>
-                                                I think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at. I will be the leader of a company
-                                                that ends up being worth billions of dollars, because I
-                                                got the answers. I understand culture. I am the nucleus.
-                                                I think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at.
+                                                Обновить, переустановить, удалить, почистить - это все к нам!
+                                                Если вы сами не можете разобраться что к чему, мы разберемся со 100% гарантией,
+                                                ну или предложим варианты устранения неполадки, и только Вам решать как лучше.
+                                                Смело жмите на кнопку позвонить, или загляните в наши контакты, постараемся Вам помочь.
                                             </p>
                                         )
                                     },
                                     {
-                                        tabName: "Settings",
-                                        path: '/profile',
-                                        tabIcon: Build,
+                                        tabName: "Сборка ПК",
+                                        tabPath: '/assembly',
+                                        tabIcon: Computer,
                                         tabContent: (
-                                            <p className={classes.textCenter}>
-                                                think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at. So when you get something that has
-                                                the name Kanye West on it, it’s supposed to be pushing
-                                                the furthest possibilities. I will be the leader of a
-                                                company that ends up being worth billions of dollars,
-                                                because I got the answers. I understand culture. I am
-                                                the nucleus.
+                                            <p>
+                                                <h5 style={{fontWeight: 600}}><DoneAll color="secondary"/>Собрать новый ПК</h5>
+                                                <h5 style={{fontWeight: 600}}><DoneAll color="secondary"/>Модернизировать старый</h5>
+                                                <h5 style={{fontWeight: 600}}><DoneAll color="secondary"/>Помочь выбрать новый</h5>
+                                                <h5 style={{fontWeight: 600}}><DoneAll color="secondary"/>Помочь продать старый</h5>
                                             </p>
                                         )
                                     }
@@ -117,36 +106,27 @@ export default function ServicesSection() {
                                 headerColor="primary"
                                 tabs={[
                                     {
-                                        tabName: "Messages",
-                                        path: '/profile',
+                                        tabName: "Вызов мастера",
+                                        tabPath: '/master',
                                         tabIcon: Chat,
                                         tabContent: (
                                             <p className={classes.textCenter}>
-                                                I think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at. I will be the leader of a company
-                                                that ends up being worth billions of dollars, because I
-                                                got the answers. I understand culture. I am the nucleus.
-                                                I think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at.
+                                                Вызов мастера и диагностика на дому бесплатно,
+                                                в случае выполнения любых робот или ремонта.
                                             </p>
                                         )
                                     },
                                     {
-                                        tabName: "Settings",
-                                        path: '/profile',
+                                        tabName: "Для чайников",
+                                        tabPath: '/zero',
                                         tabIcon: Build,
                                         tabContent: (
                                             <p className={classes.textCenter}>
-                                                think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at. So when you get something that has
-                                                the name Kanye West on it, it’s supposed to be pushing
-                                                the furthest possibilities. I will be the leader of a
-                                                company that ends up being worth billions of dollars,
-                                                because I got the answers. I understand culture. I am
-                                                the nucleus.
+                                                Не всем дано быть опытными пользователями современной техники,
+                                                так что переживать тут не о чем. Этот раздел создан именно для
+                                                такой категории людей. Перед тем как звонить нам, сделайте
+                                                несколько рекомендаций. В 90% случаев простые шаги
+                                                помогают исправить большинство проблем.
                                             </p>
                                         )
                                     }

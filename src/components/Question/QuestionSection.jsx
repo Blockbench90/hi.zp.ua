@@ -21,10 +21,7 @@ export default function QuestionSection() {
                     <GridItem xs={12} sm={12} md={8}>
                         <h2>Остались вопросы?</h2>
                         <h4>
-                            Cause if you do, it can be yours for FREE. Hit the buttons below
-                            to navigate to our website where you can find the kit. We also
-                            have the Bootstrap 4 version on plain HTML. Start a new project or
-                            give an old Bootstrap project a new look!
+                            Мы работаем в Запорожье (Пески, Космос)
                         </h4>
                     </GridItem>
 

@@ -10,7 +10,7 @@ import GridItem from "../../utils/Grid/GridItem";
 import HeaderLinks from "../../components/Header/HeaderLinks";
 import Parallax from "../../components/Parallax/Parallax";
 
-import styles from "./servicesStyle";
+import styles from "./serviceStyle/servicesStyle";
 import ScrollButton from "../../utils/ScrollButton/ScrollButton";
 import QuestionSection from "../../components/Question/QuestionSection";
 import BackButton from "../../utils/ScrollButton/BackButton";
@@ -29,7 +29,7 @@ export default function FixPage(props) {
             <Header color="transparent" brand="Hackers-Inside" rightLinks={<HeaderLinks/>} fixed
                     changeColorOnScroll={{height: 200, color: "white"}} {...rest} />
 
-            <Parallax small filter image={require("../../assets/img/services/fix/slick_2.jpg")}/>
+            <Parallax small filter image={require("../../assets/img/services/fix/bg.jpg")}/>
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <ScrollButton>
 

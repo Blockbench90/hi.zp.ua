@@ -1,7 +1,6 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
-import {CheckCircleOutline, Chat, DoneAll, ImportantDevices, Build, BusinessCenter, Error, Computer} from '@material-ui/icons';
-
+import {Chat, DoneAll, AddIcCall, ImportantDevices, Build, Accessible, BusinessCenter, Error, Computer} from '@material-ui/icons';
 import GridContainer from "../../utils/Grid/GridContainer";
 import GridItem from "../../utils/Grid/GridItem";
 import CustomTabs from "../../utils/CustomTabs/CustomTabs";
@@ -108,7 +107,7 @@ export default function ServicesSection() {
                                     {
                                         tabName: "Вызов мастера",
                                         tabPath: '/master',
-                                        tabIcon: Chat,
+                                        tabIcon: AddIcCall,
                                         tabContent: (
                                             <p className={classes.textCenter}>
                                                 Вызов мастера и диагностика на дому бесплатно,
@@ -119,7 +118,7 @@ export default function ServicesSection() {
                                     {
                                         tabName: "Для чайников",
                                         tabPath: '/zero',
-                                        tabIcon: Build,
+                                        tabIcon: Accessible,
                                         tabContent: (
                                             <p className={classes.textCenter}>
                                                 Не всем дано быть опытными пользователями современной техники,

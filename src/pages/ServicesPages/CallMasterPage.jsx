@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 import {makeStyles} from "@material-ui/core/styles";
-import DoneAllIcon from '@material-ui/icons/DoneAll';
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -21,7 +20,6 @@ export default function CallMasterPage(props) {
     const classes = useStyles();
     const {...rest} = props;
     const imageTop = classNames(classes.imgRaised, classes.imgRoundedRadius, classes.imgFluid);
-    const imageContent = classNames(classes.imgRaised, classes.imgRoundedCircle, classes.imgFluid);
 
     return (
 

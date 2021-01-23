@@ -19,6 +19,7 @@ export default function ProfilePreviewSection() {
     return (
         <div className={classes.section}>
             <div className={classes.container}>
+                <h3 style={{textAlign: 'center'}}>Мастера</h3>
                 <GridContainer justify="center">
 
                     <GridItem xs={12} sm={12} md={6}>

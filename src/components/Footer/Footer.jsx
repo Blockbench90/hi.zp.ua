@@ -30,7 +30,7 @@ export default function Footer(props) {
                     <List className={classes.list}>
                         <ListItem className={classes.inlineBlock}>
                             <a href="https://hi.zp.ua/" className={classes.block}  >
-                                миньет создателю сайта
+                                миньет создателю сайта и ген-директору))
                             </a>
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
@@ -54,7 +54,7 @@ export default function Footer(props) {
                     &copy; {1900 + new Date().getYear()} , made with{" "}
                     <Favorite className={classes.icon} /> by{" "}
                     <a href="https://hi.zp.ua/" className={aClasses}  >
-                        Hackers - Inside Tim
+                        Hackers - Inside
                     </a>{" "}
                     for a better web.
                 </div>

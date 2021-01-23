@@ -42,6 +42,7 @@ export default function CarouselSection() {
     return (
         <div className={classes.section}>
             <div className={classes.container}>
+                <h3 style={{textAlign: 'center'}}>Коротко о наших буднях...</h3>
                 <GridContainer>
                     <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
                         <Card carousel>

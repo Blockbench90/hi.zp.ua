@@ -16,8 +16,6 @@ import AssemblyPage from "./pages/ServicesPages/AssemblyPage";
 import CallMasterPage from "./pages/ServicesPages/CallMasterPage";
 import ZeroPage from "./pages/ServicesPages/ZeroPage";
 
-//TODO: блоки показа услуг +1
-
 const hist = createBrowserHistory();
 
 ReactDOM.render(

@@ -112,11 +112,6 @@ export default function ZeroPage(props) {
                                     </p>
                                 </GridItem>
                             </GridContainer>
-
-
-                            <div className={classes.description}>
-
-                            </div>
                             <QuestionSection />
                         </div>
                     </div>

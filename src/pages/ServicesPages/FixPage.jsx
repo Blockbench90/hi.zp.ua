@@ -96,35 +96,35 @@ export default function FixPage(props) {
                             </GridContainer>
                             <div className={classes.description}>
                                 <ul style={{listStyle: "none", fontWeight: 500, fontSize: "18px", lineHeight: 2}}>
-                                    <li>Замена матрицы экрана</li>
+                                    <li><h6>Замена матрицы экрана</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Замена клавиатуры (или чистка, отмывка залитой)</li>
+                                    <li><h6>Замена клавиатуры (или чистка, отмывка залитой)</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Замена аккумулятора (оригинал или лицензия)</li>
+                                    <li><h6>Замена аккумулятора (оригинал или лицензия)</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Замена винчестера HDD, привода DVD</li>
+                                    <li><h6>Замена винчестера HDD, привода DVD</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Замена оперативной памяти</li>
+                                    <li><h6>Замена оперативной памяти</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Замена шлейфов (матрицы, клавиатуры)</li>
+                                    <li><h6>Замена шлейфов (матрицы, клавиатуры)</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Прошивка BIOS</li>
+                                    <li><h6>Прошивка BIOS</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Сброс забытого пароля BIOS</li>
+                                    <li><h6>Сброс забытого пароля BIOS</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Чистка системы охлаждения ноутбука и замена термоинтерфейсов</li>
+                                    <li><h6>Чистка системы охлаждения ноутбука и замена термоинтерфейсов</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Ремонт материнских плат ноутбука, включая пересадку чипов северного и южного
-                                        мостов
+                                    <li><h6>Ремонт материнских плат ноутбука, включая пересадку чипов северного и южного
+                                        мостов</h6>
                                     </li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Ремонт ноутбучных видеокарт, включая пересадку чипа видеокарты и чипов
-                                        видеопамяти
+                                    <li><h6>Ремонт ноутбучных видеокарт, включая пересадку чипа видеокарты и чипов
+                                        видеопамяти</h6>
                                     </li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Ремонт подсветки матрицы, включая замену ламп подсветки</li>
+                                    <li><h6>Ремонт подсветки матрицы, включая замену ламп подсветки</h6></li>
                                     <DoneAllIcon color="secondary"/>
-                                    <li>Любые другие виды ремонта (перепайка разъемов, замена WI-Fi модуля и др.)</li>
+                                    <li><h6>Любые другие виды ремонта (перепайка разъемов, замена WI-Fi модуля и др.)</h6> </li>
                                     <DoneAllIcon color="secondary"/>
                                 </ul>
                             </div>

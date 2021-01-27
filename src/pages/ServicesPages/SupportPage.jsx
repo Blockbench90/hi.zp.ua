@@ -183,7 +183,9 @@ export default function SupportPage(props) {
                             </GridContainer>
 
                             <div className={classes.description}>
+                                <h4>
                                 Пески, Космос, Запорожье, звоните или пишите, будем рады
+                                </h4>
                             </div>
                             <QuestionSection/>
                         </div>

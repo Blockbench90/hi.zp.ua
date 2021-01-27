@@ -113,8 +113,10 @@ export default function AssemblyPage(props) {
                                 </GridItem>
                             </GridContainer>
                             <div className={classes.description}>
+                                <h4>
                                 Если Вы живете в Запорожье, будь то Пески или Космос, ниже есть кнопка позвонить,
                                 или написать нам в Telegram. Жмите и мы постараемся Вам помочь)
+                                </h4>
                             </div>
                             <QuestionSection />
                         </div>

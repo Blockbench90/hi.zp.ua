@@ -1,6 +1,6 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
-import {Chat, DoneAll, AddIcCall, ImportantDevices, Build, Accessible, BusinessCenter, Error, Computer} from '@material-ui/icons';
+import {Accessible, AddIcCall, BusinessCenter, Computer, DoneAll, Error, ImportantDevices} from '@material-ui/icons';
 import GridContainer from "../../utils/Grid/GridContainer";
 import GridItem from "../../utils/Grid/GridItem";
 import CustomTabs from "../../utils/CustomTabs/CustomTabs";
@@ -34,10 +34,7 @@ export default function ServicesSection() {
                                                 <p>
                                                     Не стоит отчаиваться! Даже если некие горе-умельцы уже посоветовали Вам выкинуть
                                                     и купить новый, есть смысл обратиться к нам за консультацией или диагностикой, ведь это
-                                                    бесплатно и Вы ничего не теряете. Опыт, необходимое оборудование, налаженные связи с поставщиками комплектующих,
-                                                    позволяют нам в сжатые сроки произвести диагностику и если это целесообразно, ремонт.На проведенные работы по
-                                                    ремонту дается гарантия до 3-х месяцев, а на некоторые установленные комплектующие (память, винчестер HDD, привод DVD)
-                                                    гарантия от 1 года до 3-х лет!
+                                                    бесплатно.
                                                 </p>
                                             </div>
                                         )
@@ -54,12 +51,7 @@ export default function ServicesSection() {
                                                 <p>
                                                     Каждый компьютер, ноутбук или тот же принтер, нуждается в обслуживании точно так же,
                                                     как и машина. Да, компьютер потребляет электричество, а не бензин, но масло все же менять
-                                                    обязательно. Случалось ли такое, что компьютер после небольшой нагрузки выключался.
-                                                    Ни с того, ни с сего, без спросу и разрешения, просто бац и потух? Или он начинает замедляться,
-                                                    замедляться, замедляться, и вот он уже включается 5 минут, вкладки в браузере загружаются по пол
-                                                    часа, вы грешите на плохой интернет, перезагружаете роутер, а эффекта ноль? Или шум вентиляторов
-                                                    начинает давить на уши, словно вы стоите возле мощной, гудящей вытяжки? Все возможно, и даже больше,
-                                                    до боли нам знакомо.
+                                                    обязательно.
                                                 </p>
                                             </div>
                                         )
@@ -100,7 +92,7 @@ export default function ServicesSection() {
                                 ]}
                             />
                         </GridItem>
-                        <GridItem xs={12} sm={12} md={6}>
+                        <GridItem xs={12} sm={12} md={12}>
                             <CustomTabs
                                 headerColor="primary"
                                 tabs={[
@@ -126,47 +118,6 @@ export default function ServicesSection() {
                                                 такой категории людей. Перед тем как звонить нам, сделайте
                                                 несколько рекомендаций. В 90% случаев простые шаги
                                                 помогают исправить большинство проблем.
-                                            </p>
-                                        )
-                                    }
-                                ]}
-                            />
-                        </GridItem>
-                        <GridItem xs={12} sm={12} md={6}>
-                            <CustomTabs
-                                headerColor="primary"
-                                tabs={[
-                                    {
-                                        tabName: "Messages",
-                                        path: '/profile',
-                                        tabIcon: Chat,
-                                        tabContent: (
-                                            <p className={classes.textCenter}>
-                                                I think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at. I will be the leader of a company
-                                                that ends up being worth billions of dollars, because I
-                                                got the answers. I understand culture. I am the nucleus.
-                                                I think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at.
-                                            </p>
-                                        )
-                                    },
-                                    {
-                                        tabName: "Settings",
-                                        path: '/profile',
-                                        tabIcon: Build,
-                                        tabContent: (
-                                            <p className={classes.textCenter}>
-                                                think that’s a responsibility that I have, to push
-                                                possibilities, to show people, this is the level that
-                                                things could be at. So when you get something that has
-                                                the name Kanye West on it, it’s supposed to be pushing
-                                                the furthest possibilities. I will be the leader of a
-                                                company that ends up being worth billions of dollars,
-                                                because I got the answers. I understand culture. I am
-                                                the nucleus.
                                             </p>
                                         )
                                     }

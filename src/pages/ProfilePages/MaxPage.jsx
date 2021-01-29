@@ -50,7 +50,7 @@ export default function MaxProfile(props) {
                                     </div>
                                     <div className={classes.name}>
                                         <h3 className={classes.title}>Максим</h3>
-                                        <h6>Мастер, учредитель, клевый парень и просто отлично сосет)))</h6>
+                                        <h6>Мастер, учредитель</h6>
 
                                         <Tooltip id="instagram-twitter" title="Написать в Telegram">
                                         <Button justIcon link href="https://t.me/Hacersinside" target="_blank" className={classes.margin5}>

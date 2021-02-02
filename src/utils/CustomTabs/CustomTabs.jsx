@@ -72,7 +72,6 @@ export default function CustomTabs(props) {
                             <Button
                             color="primary"
                             size="lg"
-                            target="_blank"
                         >
                             Читать дальше...
                                 </Button>

@@ -25,30 +25,29 @@ export default function HeaderLinks() {
                 }}
                                 buttonIcon={Apps}
                                 dropdownList={[
-                                    <Link to="/fix" target="_blank" className={classes.dropdownLink}>
+                                    <Link to="/fix" className={classes.dropdownLink}>
                                         Ремонт
                                     </Link>,
-                                    <Link to="/service" target="_blank" className={classes.dropdownLink}>
+                                    <Link to="/service" className={classes.dropdownLink}>
                                         Обслуживание
                                     </Link>,
-                                    <Link to="/support" target="_blank" className={classes.dropdownLink}>
+                                    <Link to="/support" className={classes.dropdownLink}>
                                         Программы
                                     </Link>,
-                                    <Link to="/assembly" target="_blank" className={classes.dropdownLink}>
+                                    <Link to="/assembly" className={classes.dropdownLink}>
                                         Сборка ПК
                                     </Link>,
-                                    <Link to="/master" target="_blank" className={classes.dropdownLink}>
+                                    <Link to="/master" className={classes.dropdownLink}>
                                         Вызов мастера
                                     </Link>,
-                                    <Link to="/zero" target="_blank" className={classes.dropdownLink}>
+                                    <Link to="/zero" className={classes.dropdownLink}>
                                         Для чайников
-                                    </Link>,
-                                    <a href="https://hi.zp.ua/" className={classes.dropdownLink}>hi.zp.ua</a>
+                                    </Link>
                                 ]}/>
             </ListItem>
 
             <ListItem className={classes.listItem}>
-                <Button href="tel:+380979107901" color="transparent" target="_blank" className={classes.navLink} >
+                <Button href="tel:+380979107901" color="transparent" className={classes.navLink} >
                     <Phone className={classes.icons} /> Позвонить
                 </Button>
 
@@ -56,7 +55,7 @@ export default function HeaderLinks() {
             <ListItem className={classes.listItem}>
                 <Tooltip id="instagram-twitter" title="Написать в Telegram" placement={window.innerWidth > 959 ? "top" : "left"}
                          classes={{ tooltip: classes.tooltip }} >
-                    <Button href="https://t.me/Hacersinside" target="_blank" color="transparent" className={classes.navLink}>
+                    <Button href="https://t.me/Hacersinside" color="transparent" className={classes.navLink}>
                         <Telegram className={classes.icons} />
                     </Button>
                 </Tooltip>
@@ -65,7 +64,7 @@ export default function HeaderLinks() {
             <ListItem className={classes.listItem}>
                 <Tooltip id="instagram-twitter" title="Написать в Viber" placement={window.innerWidth > 959 ? "top" : "left"}
                          classes={{ tooltip: classes.tooltip }}>
-                    <Button href="viber://add?number=380979107901" target="_blank" color="transparent" className={classes.navLink}>
+                    <Button href="viber://add?number=380979107901" color="transparent" className={classes.navLink}>
                         <SendOutlined className={classes.icons} />
                     </Button>
                 </Tooltip>
@@ -74,8 +73,7 @@ export default function HeaderLinks() {
             <ListItem className={classes.listItem}>
                 <Tooltip id="instagram-tooltip" title="Отслеживать в Instagram" placement={window.innerWidth > 959 ? "top" : "left"}
                          classes={{ tooltip: classes.tooltip }}>
-                    <Button color="transparent" href="https://www.instagram.com/maxim.zpua/" target="_blank"
-                            className={classes.navLink}>
+                    <Button color="transparent" href="https://www.instagram.com/maxim.zpua/" className={classes.navLink}>
                         <i className={classes.socialIcons + " fab fa-instagram"} />
                     </Button>
                 </Tooltip>
